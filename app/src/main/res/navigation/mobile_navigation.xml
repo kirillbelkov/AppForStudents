@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_intensity">
+
+    <fragment
+        android:id="@+id/nav_intensity"
+        android:name="com.example.appforstudents.ui.intensity.IntensityFragment"
+        android:label="@string/menu_intensity"
+        tools:layout="@layout/fragment_intensity" />
+
+    <fragment
+        android:id="@+id/nav_width"
+        android:name="com.example.appforstudents.ui.width.WidthFragment"
+        android:label="@string/menu_width"
+        tools:layout="@layout/fragment_width" />
+
+    <fragment
+        android:id="@+id/nav_people"
+        android:name="com.example.appforstudents.ui.people.PeopleFragment"
+        android:label="@string/menu_people"
+        tools:layout="@layout/fragment_people" />
+
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="com.example.appforstudents.ui.data.DataFragment"
+        android:label="@string/menu_data"
+        tools:layout="@layout/fragment_data" />
+</navigation>

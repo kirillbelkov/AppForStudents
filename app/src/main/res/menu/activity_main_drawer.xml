@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_intensity"
+            android:icon="@drawable/traffic"
+            android:title="@string/menu_intensity" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/users"
+            android:title="@string/menu_people" />
+        <item
+            android:id="@+id/nav_width"
+            android:icon="@drawable/width"
+            android:title="@string/menu_width" />
+        <item
+            android:id="@+id/nav_data"
+            android:icon="@drawable/send"
+            android:title="@string/menu_data" />
+    </group>
+</menu>

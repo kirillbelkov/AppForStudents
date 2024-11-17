@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black"/> <!-- Цвет кнопки -->
+            <corners android:bottomLeftRadius="360dp" android:topLeftRadius="360dp"/> <!-- Установите радиус для верхних углов -->
+        </shape>
+    </item>
+</layer-list>

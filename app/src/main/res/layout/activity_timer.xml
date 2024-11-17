@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddede0"
+    tools:context=".TimerActivity">
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="143dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btAddSocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPersonal"
+        android:layout_width="117dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btAddPersonal"
+        app:layout_constraintEnd_toStartOf="@+id/etSocial"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tPersonInt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etSocial"
+        android:layout_width="117dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btAddSocial"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tSocialInt"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/tSocialInt"
+        android:layout_width="119dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="Интенсивность общественного транспорта"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <TextView
+        android:id="@+id/tPersonInt"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+
+        android:layout_marginTop="48dp"
+        android:text="Интенсивность личного транспорта"
+        app:layout_constraintEnd_toStartOf="@+id/tSocialInt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <Button
+        android:id="@+id/btAddPersonal"
+        android:layout_width="196dp"
+        android:layout_height="261dp"
+        android:background="@drawable/half_circular_right_button"
+        android:shape="oval"
+        android:text="+ 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btAddSocial"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <Button
+        android:id="@+id/btAddSocial"
+        android:layout_width="196dp"
+        android:layout_height="261dp"
+        android:background="@drawable/half_circular_left_button"
+        android:shape="oval"
+        android:text="+ 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <Button
+        android:id="@+id/btReducePersonal"
+        android:layout_width="94dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="36dp"
+        android:text="- 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAddPersonal"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btReduceSocial"
+        android:layout_width="94dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="36dp"
+        android:text="- 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btReducePersonal"
+        app:layout_constraintTop_toBottomOf="@+id/btAddSocial"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btAddSocial"
+        app:layout_constraintEnd_toStartOf="@+id/tSocialInt"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime"
+        app:srcCompat="@drawable/bus" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btAddPersonal"
+        app:layout_constraintStart_toEndOf="@+id/tPersonInt"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime"
+        app:srcCompat="@drawable/car" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
